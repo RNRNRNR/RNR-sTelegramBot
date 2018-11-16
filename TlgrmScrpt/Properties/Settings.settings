@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TlgrmScrpt.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApiId" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">214207</Value>
+    </Setting>
+    <Setting Name="ApiHash" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7377b10309a8f84064db86f304351506</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
