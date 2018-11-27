@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Telegram.Bot.Types;
+using Telegram.Bot;
 
 namespace RNR_sTelegramBot.Models.Modules
 {
-    public class BasicCommand
+    public abstract class BasicCommand // template for commands
     {
+        public abstract string Name { get; }
+
+        public abstract void Execute(Message msg, TelegramBotClient client);
+
+        public bool ContainsOther(string command)// check command for a copy
+        {
+            return command.Contains(this.Name) && command.Contains(BotSetting.Name);
+        }
     }
 }
