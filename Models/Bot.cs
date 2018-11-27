@@ -23,10 +23,11 @@ namespace RNR_sTelegramBot.Models
             }
 
             commandsList = new List<BasicCommand>(); 
-            commandsList.Add(new AnsverHelloCommand()); //place to initialize the commands
+            commandsList.Add(new AnsverHelloCommand()); //place to initialize other commands
 
-            client = new TelegramBotClient(BotSetting.Key);
-            await client.SetWebhookAsync("");
+            client = new TelegramBotClient(BotSettings.Key);
+            var hook = string.Format(BotSettings.Url, "api/message/update");
+            await client.SetWebhookAsync(hook);// webhook
 
             return client;
         }

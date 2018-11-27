@@ -11,7 +11,7 @@ namespace RNR_sTelegramBot.Models.Modules
 
         public bool ContainsOther(string command)// check command for a copy
         {
-            return command.Contains(this.Name) && command.Contains(BotSetting.Name);
+            return command.Contains(this.Name) && command.Contains(BotSettings.Name);
         }
     }
 }

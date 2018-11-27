@@ -5,7 +5,7 @@ using System.Web;
 
 namespace RNR_sTelegramBot.Models
 {
-    public static class BotSetting
+    public static class BotSettings
     {
         public static string Url { get; set; } // final url
 

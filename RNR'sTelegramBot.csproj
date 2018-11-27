@@ -135,8 +135,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -145,7 +143,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Bot.cs" />
-    <Compile Include="Models\BotSetting.cs" />
+    <Compile Include="Models\BotSettings.cs" />
     <Compile Include="Models\Modules\AnsverHelloCommand.cs" />
     <Compile Include="Models\Modules\BasicCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
