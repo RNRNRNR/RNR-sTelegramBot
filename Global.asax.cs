@@ -16,7 +16,7 @@ namespace RNR_sTelegramBot
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            GlobalConfiguration.Configure(WebApiConfig.Register);//connect controller
+            GlobalConfiguration.Configure(WebApiConfig.Register); //Connect controller
             Bot.Get();
         }
     }

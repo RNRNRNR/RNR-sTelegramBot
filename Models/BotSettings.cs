@@ -7,7 +7,7 @@ namespace RNR_sTelegramBot.Models
 {
     public static class BotSettings
     {
-        public static string Url { get; set; } // final url
+        public static string Url { get; set; } = "telegrambot/"; // final url
 
         public static string Name { get; set; }
 
